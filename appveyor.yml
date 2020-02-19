@@ -9,7 +9,7 @@ on_finish:
   #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 environment:
   APPVEYOR_SAVE_CACHE_ON_ERROR: true
-  Qt5_DIR: C:\Qt\5.13.2\mingw73_32
+  #Qt5_DIR: C:\Qt\5.13.2\mingw73_32
 cache:
   - C:\Tools\vcpkg\installed\
 install: # scripts that run after cloning repository
