@@ -10,6 +10,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt5::Test
     ZCore)
 
-add_test(${PROJECT_NAME}
-  ${PROJECT_NAME}
-)
+add_test(NAME ${PROJECT_NAME} COMMAND $<TARGET_FILE:${PROJECT_NAME}>)

@@ -18,3 +18,5 @@ jobs:
       uses: ouuan/install-qt-action@v2.3.1
     - name: Build
       run: sh ./scripts/build_linux.sh
+    - name: Test
+      run: cd build/Release && ctest --output-on-failure
